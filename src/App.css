@@ -1,0 +1,115 @@
+* {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mother {
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  border-radius: 13px;
+}
+
+.logo {
+  /* height: 6em; */
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.kk-l {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 16%;
+  background: linear-gradient(to right, #f2d0d0, #a1e872);
+
+  box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.9);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.jkl-qw {
+  border: 3px dotted red;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 0;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* App.css */
+
+/* Your existing styles */
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768 pixels */
+  .mother {
+    /* Adjust styles for smaller screens */
+    background-color: #e0ffff; /* Example adjustment */
+  }
+
+  /* Add more styles as needed */
+  .jkl-qw {
+    width: 100%; /* Example adjustment for the Card component */
+  }
+
+  /* Adjust styles for smaller screens within the card component */
+  .jkl-qw .card-body {
+    /* Example adjustment */
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    text-align: center;
+    border: 1px solid #000;
+  }
+
+  .kk-l {
+    /* Example adjustment for the description section */
+    margin-top: 20px;
+  }
+
+  .mt-4.text-center {
+    /* Example adjustment for the prompting section */
+    font-size: 1.5rem;
+  }
+
+  .mt-4.text-center img {
+    /* Example adjustment for the image within the prompting section */
+    width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Set a maximum width */
+    border-radius: 10%; /* Example adjustment */
+  }
+}
